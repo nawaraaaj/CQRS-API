@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35327.3
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11612.150 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollegeCQRS.WebAPI", "College CQRS\CollegeCQRS.WebAPI.csproj", "{F24D0BE3-D5A1-4813-853E-2EE256D9B5C8}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollegeCQRS.Infrastructure", "CollegeCQRS.Infrastructure\CollegeCQRS.Infrastructure.csproj", "{3361C74B-5AFC-4388-B3D8-01E0EFE4E87C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollegeCQRS.Application", "CollegeCQRS.Application\CollegeCQRS.Application.csproj", "{4C68929E-6AF0-4C17-8CB7-4FCE54092606}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "StudentCRUD", "StudentCRUD\StudentCRUD.esproj", "{3087B381-0A0B-077B-8C87-08F77FDDCF09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,12 @@ Global
 		{4C68929E-6AF0-4C17-8CB7-4FCE54092606}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C68929E-6AF0-4C17-8CB7-4FCE54092606}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C68929E-6AF0-4C17-8CB7-4FCE54092606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3087B381-0A0B-077B-8C87-08F77FDDCF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3087B381-0A0B-077B-8C87-08F77FDDCF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3087B381-0A0B-077B-8C87-08F77FDDCF09}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3087B381-0A0B-077B-8C87-08F77FDDCF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3087B381-0A0B-077B-8C87-08F77FDDCF09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3087B381-0A0B-077B-8C87-08F77FDDCF09}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

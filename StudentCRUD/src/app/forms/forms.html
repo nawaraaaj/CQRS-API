@@ -1,0 +1,17 @@
+<h2>Add a Student</h2>
+
+<form [formGroup]="StudentForm" (ngSubmit)="onSubmit()">
+
+  <label>Name: </label>
+  <input id="name" type="text" formControlName="name" /> <br /><br />
+
+  <label>Age: </label>
+  <input id="age" type="number" formControlName="age" /> <br /><br />
+
+  <label> Address: </label>
+  <input id="adderss" type="text" formControlName="address" /> <br /><br />
+
+
+  <button type="submit">Submit</button>
+
+</form>
