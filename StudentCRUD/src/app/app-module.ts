@@ -8,9 +8,10 @@ import { Addstudent } from './addstudent/addstudent';
 import { Getstudent } from './getstudent/getstudent';
 import { Getstudentbyid } from './getstudentbyid/getstudentbyid';
 import { Updatestudent } from './updatestudent/updatestudent';
+import { Deletestudent } from './deletestudent/deletestudent';
 
 @NgModule({
-  declarations: [App, Addstudent, Getstudent, Getstudentbyid, Updatestudent],
+  declarations: [App, Addstudent, Getstudent, Getstudentbyid, Updatestudent, Deletestudent],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],

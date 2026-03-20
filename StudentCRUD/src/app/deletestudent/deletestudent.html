@@ -1,0 +1,9 @@
+<h2>Delete Student</h2>
+
+<form (ngSubmit)="onSubmit()">
+  <label>Enter Student Id:</label>
+  <input type="text" name="id" [formControl]="id" required><br /><br />
+
+  <button type="button" (click)="onSubmit()">Delete Student</button>
+</form>
+
