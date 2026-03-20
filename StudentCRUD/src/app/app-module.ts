@@ -4,10 +4,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Forms } from './forms/forms';
+import { Addstudent } from './addstudent/addstudent';
 
 @NgModule({
-  declarations: [App, Forms],
+  declarations: [App,  Addstudent],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],

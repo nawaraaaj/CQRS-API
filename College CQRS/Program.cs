@@ -18,25 +18,28 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-//mysql and dbcontext
+//mysql and dbcontext  
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
-// mediater library
+// mediater library 
 builder.Services.AddMediatR(typeof(CreateStudentCommandHandler).Assembly);
 
-//repository
+//repository 
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 
 //enable cors
+//this allows the frontend to make connections to the backend without any issues.
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
-        policy => policy
-            .WithOrigins("http://localhost:4200")
-            .AllowAnyHeader()
-            .AllowAnyMethod());
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:52877")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
 });
 
 
