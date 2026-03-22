@@ -1,17 +1,17 @@
 <h2>Update Student Details</h2>
 
-<form onsubmit="onsubmit">
+<form (ngSubmit)="onSubmit()">
   <label for="id">Student ID:</label>
-  <input id="id" type="number" /><br /><br />
+  <input id="id" type="number" [formControl]="id" /><br /><br />
 
   <label for="name">Name</label>
-  <input id="name" type="text" /><br /><br />
+  <input id="name" type="text" [formControl] ="name" /><br /><br />
 
   <label for="age">Age</label>
-  <input id="age" type="number"/><br /><br />
+  <input id="age" type="number" [formControl]="name"/><br /><br />
 
   <label for="address">Address</label>
-  <input id="address" type="text" /><br /><br />
+  <input id="address" type="text" [formControl] ="address" /><br /><br />
 
-  <button type="submit">Submit</button>
+  <button type="submit">Update</button>
 </form>
